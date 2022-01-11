@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
@@ -37,15 +39,91 @@
   <body>
     <div class="container">
       <form id="search-city">
-        <input
-          class="search-bar"
-          type="seacrch"
-          placeholder="Enter city"
-          autocomplete="off"
-          id="city-input"
-        />
-        <input type="submit"
+        <div class="row">
+          <div class="col-6">
+            <input
+              class="search-bar"
+              type="seacrch"
+              placeholder="Enter city"
+              autocomplete="off"
+              id="city-input"
+            />
+          </div>
+          <div class="col-3">
+            <input type="submit" value="🔍" id="search-button" />
+          </div>
+          <div class="col-3">
+            <button id="location-button">📍 Current Location</button>
+          </div>
+        </div>
       </form>
+      <div class="currentForecast">
+        <h1 id="city">London</h1>
+        <ul>
+          <li>Today's Date: <span id="date"></span></li>
+          <li id="weatherDescription"></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix weather-temperature">
+            <img src="" alt="Clear" id="icon" class="float-left" />
+            <div class="float-left">
+              <strong id="temperature"></strong><span class="units"> °C</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> m/h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="weather-forecast" id="forecast"></div>
     </div>
+    <div class="row">
+      <div class="col">
+        <h3>Tomorrow</h3>
+        <i class="fas fa-cloud-showers-heavy weatherIcon"></i>
+        <h2 class="temperature">6°C</h2>
+        <div class="humidityDiv">
+          Humidity: <span id="humidityValue"></span>%
+        </div>
+      </div>
+      <div class="col">
+        <h3>Mon</h3>
+        <i class="fas fa-cloud-sun weatherIcon"></i>
+        <h2 class="temperature">8°C</h2>
+        <div class="humidityDiv">
+          Humidity: <span id="humidityValue"></span>%
+        </div>
+      </div>
+      <div class="col">
+        <h3>Tue</h3>
+        <i class="fas fa-sun weatherIcon"></i>
+        <h2 class="temperature">9°C</h2>
+        <div class="humidityDiv">
+          Humidity: <span id="humidityValue"></span>%
+        </div>
+      </div>
+      <div class="col">
+        <h3>Wed</h3>
+        <i class="fas fa-sun weatherIcon"></i>
+        <h2 class="temperature">11°C</h2>
+        <div class="humidityDiv">
+          Humidity: <span id="humidityValue"></span>%
+        </div>
+      </div>
+      <div class="col">
+        <h3>Thu</h3>
+        <i class="fas fa-cloud-sun weatherIcon"></i>
+        <h2 class="temperature">8°C</h2>
+        <div class="humidityDiv">
+          Humidity: <span id="humidityValue"></span>%
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
