@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
@@ -66,71 +62,29 @@
       </div>
       <div class="row">
         <div class="col-6">
-          <div class="clearfix weather-temperature">
-            <img src="" alt="Clear" id="icon" class="float-left" />
-            <div class="float-left">
-              <strong id="temperature"></strong><span class="units"> °C</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> m/h</li>
-          </ul>
-        </div>
-      </div>
-      <div class="weather-forecast" id="forecast"></div>
-      <div class="row">
-        <div class="col">
-          <h3>Tomorrow</h3>
-          <i class="fas fa-cloud-showers-heavy weatherIcon"></i>
-          <h2 class="temperature">6°C</h2>
-          <div class="humidityDiv">
-            Humidity: <span id="humidityValue"></span>%
-          </div>
-        </div>
-        <div class="col">
-          <h3>Mon</h3>
-          <i class="fas fa-cloud-sun weatherIcon"></i>
-          <h2 class="temperature">8°C</h2>
-          <div class="humidityDiv">
-            Humidity: <span id="humidityValue"></span>%
-          </div>
-        </div>
-        <div class="col">
-          <h3>Tue</h3>
-          <i class="fas fa-sun weatherIcon"></i>
-          <h2 class="temperature">9°C</h2>
-          <div class="humidityDiv">
-            Humidity: <span id="humidityValue"></span>%
-          </div>
-        </div>
-        <div class="col">
-          <h3>Wed</h3>
-          <i class="fas fa-sun weatherIcon"></i>
-          <h2 class="temperature">11°C</h2>
-          <div class="humidityDiv">
-            Humidity: <span id="humidityValue"></span>%
-          </div>
-        </div>
-        <div class="col">
-          <h3>Thu</h3>
-          <i class="fas fa-cloud-sun weatherIcon"></i>
-          <h2 class="temperature">8°C</h2>
-          <div class="humidityDiv">
-            Humidity: <span id="humidityValue"></span>%
+          <div class="currentWeather">
+            <i class="far fa-snowflake"></i>
+            <strong id="temperature"></strong><span class="units"> °C</span>
           </div>
         </div>
       </div>
-    </div>
+      <div class="col-6">
+        <ul>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> m/h</li>
+        </ul>
+      </div>
 
+      <div class="weather-forecast" id="forecast"></div>
+    </div>
     <script src="src/index.js"></script>
+    <small>
+      <a
+        href="https://github.com/nimsay06/github-weather-app.git"
+        target="_blank"
+        >Open-source code</a
+      >
+      by Yasmin Tercenio
+    </small>
   </body>
-  <small>
-    <a href="https://github.com/nimsay06/github-weather-app.git" target="_blank"
-      >Open-source code</a
-    >
-    by Yasmin Tercenio
-  </small>
 </html>

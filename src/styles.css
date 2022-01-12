@@ -1,7 +1,8 @@
 .container {
-  border: #ffadad solid 5px;
+  border: #ffc6ff solid 5px;
+  font-family: "Urbanist", sans-serif;
   border-radius: 15px;
-  background: #ffd6a5;
+  background: #bdb2ff;
   margin: 60px auto 30px auto;
   padding: 35px 40px 30px 40px;
   max-width: 900px fit-content;
@@ -32,19 +33,6 @@
 #location-button:hover {
   box-shadow: rgb(77, 150, 179) 0px 5px 10px;
 }
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  font: ;
-  margin: 0;
-  padding: 0;
-  color: rgb(135, 135, 135);
-  font-size: 16px;
-
 
 .col {
   text-align: center;
@@ -59,4 +47,15 @@ li {
 }
 .col:hover {
   box-shadow: rgb(77, 150, 179) 0px 5px 20px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font: 20px;
+  margin: 0;
+  padding: 0;
 }
