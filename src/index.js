@@ -37,8 +37,9 @@ function displayWeather(response) {
   humidityElement.innerHTML = response.data.main.humdity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
 }
+
 let city = "London";
 let apiKey = `763b250b80fa958302cdd5a87d7a2da5`;
 let apiUrl = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiKey).then(displayWeather);
+axios.get(apiUrl).then(displayWeather);
