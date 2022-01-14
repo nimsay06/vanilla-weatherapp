@@ -1,13 +1,22 @@
 .container {
+  display: block;
+  position: relative;
   border: #ffc6ff solid 5px;
   font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: #fafafa;
   border-radius: 15px;
   background: #bdb2ff;
-  margin: 60px auto 30px auto;
+  margin: 50px auto 30px auto;
   padding: 35px 40px 30px 40px;
   max-width: 900px fit-content;
   max-height: 800px fit-content;
 }
+
+#search-city {
+  margin: 30px 20px 10px 20px;
+}
+
 .search-bar {
   font-family: "Urbanist", sans-serif;
   width: 400px;
@@ -15,13 +24,47 @@
   padding: 10px;
   border: white solid 2px;
   border-radius: 20px;
-  background: rgba(253, 255, 182, 0.6);
+  background: #d7aef3;
 }
+
 #search-button {
-  margin: 0%;
+  margin-left: -50px;
   background: transparent;
   border: transparent;
 }
+
+#location-button {
+  display: inline-block;
+}
+#currentTime {
+  font: 15px "Urbanist", sans-serif;
+}
+
+.currentWeather {
+  font: 30px "Urbanist", sans-serif;
+  display: block;
+  margin: 80px 0px 20px 0px;
+  text-align: center;
+  padding: 0;
+}
+#weatherDescription {
+  display: block;
+}
+.temperatureConversion {
+  display: inline-block;
+
+  font: 20px "Urbanist", sans-serif;
+}
+.temperatureConversion .active {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.temperatureConversion .active:hover {
+  text-decoration: none;
+}
+
 #location-button {
   background: rgba(202, 255, 191, 0.3);
   font: 15px "Urbanist", sans-serif;
@@ -33,7 +76,9 @@
 #location-button:hover {
   box-shadow: rgb(77, 150, 179) 0px 5px 10px;
 }
-
+#weatherDescription {
+  text-transform: capitalize;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -44,6 +89,11 @@ li {
   font: 20px;
   margin: 0;
   padding: 0;
+}
+
+.currentWeather img {
+  height: 50px;
+  width: 50px;
 }
 
 #githubLink {

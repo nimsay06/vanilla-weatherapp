@@ -35,23 +35,15 @@
   <body>
     <div class="container">
       <form id="search-city">
-        <div class="row">
-          <div class="col-6">
-            <input
-              class="search-bar"
-              type="seacrch"
-              placeholder="Enter city"
-              autocomplete="off"
-              id="city-input"
-            />
-          </div>
-          <div class="col-3">
-            <input type="submit" value="🔍" id="search-button" />
-          </div>
-          <div class="col-3">
-            <button id="location-button">📍 Current Location</button>
-          </div>
-        </div>
+        <input
+          class="search-bar"
+          type="seacrch"
+          placeholder="Enter city"
+          autocomplete="off"
+          id="city-input"
+        />
+        <input type="submit" value="🔍" id="search-button" />
+        <button id="location-button">📍 Current Location</button>
       </form>
       <div class="currentForecast">
         <h1 id="city"></h1>
@@ -63,30 +55,30 @@
       <div class="row">
         <div class="col-6">
           <div class="currentWeather">
-            <i id="icon"class="far fa-snowflake"></i>
-            <strong id="current-temperature"></strong> 
+            <img src="" alt="" id="icon" />
+            <strong id="current-temperature"></strong>
             <div class="temperatureConversion">
-            <a href="#" id="celsius-conversionLink">°C</a> /
-            <a href="#" id="fahrenheit-conversionLink"> °F</a>
+              <a href="#" id="celsius-conversionLink">°C</a> |
+              <a href="#" id="fahrenheit-conversionLink"> °F</a>
+            </div>
           </div>
         </div>
+        <div class="col-6">
+          <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> m/h</li>
+          </ul>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
-      <div class="col-6">
-        <ul>
-          <li>Humidity: <span id="humidity"></span>%</li>
-          <li>Wind: <span id="wind"></span> m/h</li>
-        </ul>
-      </div>
-      <div class="weather-forecast" id="forecast"></div>
     </div>
     <script src="src/index.js"></script>
   </body>
-    <small id="githubLink">
-      <a
-        href="https://github.com/nimsay06/vanilla-weatherapp.git"
-        target="_blank"
-        >Open-source code</a>
-      
-      by Yasmin Tercenio
-    </small>
+  <small id="githubLink">
+    <a href="https://github.com/nimsay06/vanilla-weatherapp.git" target="_blank"
+      >Open-source code</a
+    >
+
+    by Yasmin Tercenio
+  </small>
 </html>
