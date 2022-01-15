@@ -50,23 +50,25 @@
         <ul>
           <li>Today's Date: <span id="date"></span></li>
           <li id="weatherDescription"></li>
+          <img src="" alt="" id="icon" />
         </ul>
       </div>
       <div class="row">
         <div class="col-6">
           <div class="currentWeather">
-            <img src="" alt="" id="icon" />
             <strong id="current-temperature"></strong>
             <div class="temperatureConversion">
-              <a href="#" id="celsius-conversionLink">°C</a> |
+              <a href="#" id="celsius-conversionLink" class="active">°C</a> |
               <a href="#" id="fahrenheit-conversionLink"> °F</a>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6" id="weather-parameters">
           <ul>
             <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> m/h</li>
+            <li>Wind: <span id="wind"></span> m/s</li>
+            <li>Min Temp: <span id="minTemp"></span>°C</li>
+            <li>Max Temp: <span id="maxTemp"></span>°C</li>
           </ul>
         </div>
         <div class="weather-forecast" id="forecast"></div>

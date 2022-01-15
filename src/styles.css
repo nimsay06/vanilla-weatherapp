@@ -4,6 +4,7 @@
   border: #ffc6ff solid 5px;
   font-family: "Urbanist", sans-serif;
   font-weight: 700;
+  line-height: 25px;
   color: #fafafa;
   border-radius: 15px;
   background: #bdb2ff;
@@ -29,56 +30,23 @@
 
 #search-button {
   margin-left: -50px;
+  position: static;
   background: transparent;
   border: transparent;
 }
 
 #location-button {
-  display: inline-block;
-}
-#currentTime {
-  font: 15px "Urbanist", sans-serif;
-}
-
-.currentWeather {
-  font: 30px "Urbanist", sans-serif;
-  display: block;
-  margin: 80px 0px 20px 0px;
-  text-align: center;
-  padding: 0;
-}
-#weatherDescription {
-  display: block;
-}
-.temperatureConversion {
-  display: inline-block;
-
-  font: 20px "Urbanist", sans-serif;
-}
-.temperatureConversion .active {
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.temperatureConversion .active:hover {
-  text-decoration: none;
-}
-
-#location-button {
   background: rgba(202, 255, 191, 0.3);
   font: 15px "Urbanist", sans-serif;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 40px;
   padding: 3px 7px 3px 7px;
   border: white solid 2px;
   border-radius: 10px;
 }
 #location-button:hover {
-  box-shadow: rgb(77, 150, 179) 0px 5px 10px;
+  box-shadow: rgb(116, 75, 211) 0px 5px 10px;
 }
-#weatherDescription {
-  text-transform: capitalize;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -88,12 +56,48 @@ li {
   list-style: none;
   font: 20px;
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 
-.currentWeather img {
-  height: 50px;
-  width: 50px;
+#weather-parameters {
+  display: inline-block;
+  text-align: end;
+  font-size: 25px;
+}
+
+.currentForecast {
+  font-size: 25px;
+  margin: 20px;
+}
+.currentWeather {
+  font: 35px "Urbanist", sans-serif;
+  line-height: 5px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+}
+
+.currentForecast img {
+  height: 75px;
+  width: 75px;
+  margin: 0;
+}
+.temperatureConversion {
+  display: inline;
+  font: 20px "Urbanist", sans-serif;
+}
+.temperatureConversion .active {
+  color: black;
+  font-weight: bold;
+  cursor: default;
+}
+
+.temperatureConversion .active:hover {
+  text-decoration: none;
+}
+
+#weatherDescription {
+  text-transform: capitalize;
 }
 
 #githubLink {
