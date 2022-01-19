@@ -7,11 +7,21 @@
   line-height: 25px;
   color: #fafafa;
   border-radius: 15px;
-  background: #bdb2ff;
+  background: linear-gradient(
+    0deg,
+    rgb(251, 250, 205) 10%,
+    rgb(247, 163, 205) 70%,
+    rgba(140, 66, 243, 0.808) 95%
+  );
   margin: 50px auto 30px auto;
   padding: 35px 40px 30px 40px;
   max-width: 900px fit-content;
-  max-height: 800px fit-content;
+  max-height: 900px fit-content;
+  transition: ease-in-out 100ms;
+}
+
+.container:hover {
+  box-shadow: rgb(116, 75, 211) 0px 5px 10px;
 }
 
 #search-city {
@@ -36,7 +46,7 @@
 }
 
 #location-button {
-  background: rgba(202, 255, 191, 0.3);
+  background: #d7aef3;
   font: 15px "Urbanist", sans-serif;
   margin: 0px 0px 0px 40px;
   padding: 3px 7px 3px 7px;
@@ -66,10 +76,6 @@ li {
   font-weight: lighter;
 }
 
-.currentForecast {
-  font-size: 25px;
-  margin: 20px;
-}
 .currentWeather {
   font: 35px "Urbanist", sans-serif;
   line-height: 5px;
@@ -108,11 +114,11 @@ li {
 
 #forecastCol {
   text-align: center;
-  border: #79c0f8 solid 2px;
-  background: rgb(255, 255, 255, 0.5);
+  border: #e379f8 solid 2px;
+  background: #f5cdcc;
   border-radius: 5px;
-  height: 200px fit-content;
-  width: 450px fit-content;
+  max-height: 130px fit-content;
+  max-width: 100px fit-content;
   padding: 5px;
   margin: 15px;
   transition: ease-in-out 100ms;

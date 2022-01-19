@@ -43,7 +43,9 @@
           id="city-input"
         />
         <input type="submit" value="🔍" id="search-button" />
-        <button id="location-button">📍 Current Location</button>
+        <button id="location-button" title="Click to use current location">
+          📍 Current Location
+        </button>
       </form>
       <div class="currentForecast">
         <h1 id="city"></h1>
@@ -85,8 +87,7 @@
           </ul>
         </div>
       </div>
-      <div class="weather-forecast" id="dailyForecast"></div>
-      <div class="row" id="weather-forecast"></div>
+      <div class="forecastDiv" id="weatherForecast"></div>
     </div>
     <script src="src/index.js"></script>
   </body>

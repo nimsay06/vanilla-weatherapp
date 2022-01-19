@@ -133,8 +133,8 @@ function getForecast(coordinates) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-  let forecastElement = document.querySelector("#weather-forecast");
-  let forecastHTML = `<div class="row" id="forecast">`;
+  let forecastElement = document.querySelector("#weatherForecast");
+  let forecastHTML = `<div class="row" id="weather-forecast">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
       forecastHTML =
@@ -150,14 +150,19 @@ function displayForecast(response) {
               <span class="forecast-maxTemp"> ${Math.round(
                 forecastDay.temp.max
               )}</span>
+              |
               <span class="forecast-minTemp"> ${Math.round(
                 forecastDay.temp.min
               )} </span>
             </div>
-          </div>
+        
         </div>`;
     }
   });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+searchCity("London");
+
+displayForecast();
