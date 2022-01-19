@@ -15,7 +15,7 @@
 }
 
 #search-city {
-  margin: 30px 20px 10px 20px;
+  margin: 20px 20px 10px 20px;
 }
 
 .search-bar {
@@ -48,13 +48,13 @@
 }
 
 ul {
-  margin: 0;
+  margin: 5px;
   padding: 0;
 }
 
 li {
   list-style: none;
-  font: 20px;
+  font: 15px;
   margin: 0;
   padding: 2px;
 }
@@ -62,7 +62,8 @@ li {
 #weather-parameters {
   display: inline-block;
   text-align: end;
-  font-size: 25px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 .currentForecast {
@@ -105,14 +106,7 @@ li {
   margin: 30px;
 }
 
-.weather-forecast {
-  margin-top: 30px;
-  text-align: center;
-  color: black;
-  font-size: 15px;
-}
-
-.col-2 {
+#forecastCol {
   text-align: center;
   border: #79c0f8 solid 2px;
   background: rgb(255, 255, 255, 0.5);
@@ -124,6 +118,6 @@ li {
   transition: ease-in-out 100ms;
 }
 
-.col-2:hover {
+#forecastCol:hover {
   box-shadow: rgb(77, 150, 179) 0px 5px 20px;
 }
