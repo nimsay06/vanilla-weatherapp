@@ -90,7 +90,6 @@ let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentLocation);
 
 /// temperature conversion
-
 let celsiusTemp = null;
 
 function displayFahrenheitTemp(event) {
@@ -115,7 +114,6 @@ celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-conversionLink");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
-
 /// Forecast display
 
 function formatDay(timestamp) {
@@ -149,11 +147,11 @@ function displayForecast(response) {
             <div class="forecast-temp">
               <span class="forecast-maxTemp"> ${Math.round(
                 forecastDay.temp.max
-              )}</span>
-              |
-              <span class="forecast-minTemp"> ${Math.round(
+              )} °C</span>
+              
+              <span class="forecast-minTemp"> | ${Math.round(
                 forecastDay.temp.min
-              )} </span>
+              )} °C</span>
             </div>
         
         </div>`;
@@ -164,5 +162,3 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 searchCity("London");
-
-displayForecast();

@@ -9,9 +9,9 @@
   border-radius: 15px;
   background: linear-gradient(
     0deg,
-    rgb(251, 250, 205) 10%,
-    rgb(247, 163, 205) 70%,
-    rgba(140, 66, 243, 0.808) 95%
+    rgb(251, 250, 205) 15.5%,
+    rgb(247, 163, 205) 70.5%,
+    rgba(140, 66, 243, 0.808) 95.5%
   );
   margin: 50px auto 30px auto;
   padding: 35px 40px 30px 40px;
@@ -58,40 +58,31 @@
 }
 
 ul {
-  margin: 5px;
+  margin: 0px;
   padding: 0;
 }
 
 li {
   list-style: none;
-  font: 15px;
-  margin: 0;
-  padding: 2px;
 }
 
-#weather-parameters {
-  display: inline-block;
-  text-align: end;
-  font-size: 15px;
-  font-weight: lighter;
+.currentForecast {
+  display: block;
+  text-align: center;
+  margin: 10px 40px 0px 40px;
 }
-
-.currentWeather {
-  font: 35px "Urbanist", sans-serif;
-  line-height: 5px;
-  font-weight: bold;
-  padding: 10px;
-  margin: 20px;
-}
-
 .currentForecast img {
-  height: 75px;
-  width: 75px;
-  margin: 0;
+  height: max-content;
+  width: max-content;
 }
+#weatherDescription {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
 .temperatureConversion {
-  display: inline;
   font: 20px "Urbanist", sans-serif;
+  display: inline;
 }
 .temperatureConversion .active {
   color: black;
@@ -102,28 +93,65 @@ li {
 .temperatureConversion .active:hover {
   text-decoration: none;
 }
-
-#weatherDescription {
-  text-transform: capitalize;
+.row {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#currentWeather {
+  font: 35px "Urbanist", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #7a3956;
+  display: block;
+  padding: 0px;
+  margin: -20px 100px 10px 250px;
 }
 
-#githubLink {
-  font: 20px;
-  margin: 30px;
+#weather-parameters {
+  text-align: end;
+  display: block;
+  max-width: fit-content;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #2c194d;
+  margin-top: -75px;
+  padding: 5px;
+}
+
+.forecastDiv {
+  margin: 20px 10px 5px 10px;
 }
 
 #forecastCol {
+  font: 30px;
+  color: #2c194d;
   text-align: center;
   border: #e379f8 solid 2px;
   background: #f5cdcc;
   border-radius: 5px;
   max-height: 130px fit-content;
-  max-width: 100px fit-content;
+  max-width: 80px fit-content;
   padding: 5px;
-  margin: 15px;
+  margin: 5px;
   transition: ease-in-out 100ms;
 }
 
 #forecastCol:hover {
-  box-shadow: rgb(77, 150, 179) 0px 5px 20px;
+  box-shadow: rgb(196, 72, 130) 0px 5px 20px;
+}
+
+#forecastCol img {
+  width: 70px;
+  height: 70px;
+}
+
+#forecastCol .forecast-minTemp {
+  color: #393246a9;
+}
+
+#githubLink {
+  font: 20px;
+  display: block;
+  text-align: center;
 }

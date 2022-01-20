@@ -23,12 +23,6 @@
       crossorigin="anonymous"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
@@ -55,35 +49,33 @@
           <img src="" alt="" id="icon" />
         </ul>
       </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="currentWeather">
-            <strong id="current-temperature"></strong>
-            <div class="temperatureConversion">
-              <a
-                href="#"
-                id="celsius-conversionLink"
-                class="active"
-                title="Click here to convert current temperature to Celsius"
-                >°C</a
-              >
-              |
-              <a
-                href="#"
-                id="fahrenheit-conversionLink"
-                title="Click here to convert current temperature to Fahrenheit"
-              >
-                °F</a
-              >
-            </div>
+      <div class="row" id="temp-parameters">
+        <div class="col" id="currentWeather">
+          <strong id="current-temperature"></strong>
+          <div class="temperatureConversion">
+            <a
+              href="#"
+              id="celsius-conversionLink"
+              class="active"
+              title="Click here to convert current temperature to Celsius"
+              >°C</a
+            >
+            |
+            <a
+              href="#"
+              id="fahrenheit-conversionLink"
+              title="Click here to convert current temperature to Fahrenheit"
+            >
+              °F</a
+            >
           </div>
         </div>
-        <div class="col-6" id="weather-parameters">
+        <div class="col" id="weather-parameters">
           <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> m/s</li>
-            <li>Min Temp: <span id="minTemp"></span>°C</li>
-            <li>Max Temp: <span id="maxTemp"></span>°C</li>
+            <li>Humidity: <span id="humidity"> </span>%</li>
+            <li>Wind: <span id="wind"> </span> m/s</li>
+            <li>Min Temp: <span id="minTemp"> </span>°C</li>
+            <li>Max Temp: <span id="maxTemp"> </span>°C</li>
           </ul>
         </div>
       </div>
